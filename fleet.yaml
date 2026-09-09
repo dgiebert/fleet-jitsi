@@ -7,12 +7,7 @@ helm:
   version: 3.6.0
   values:
     publicURL: https://meet.giebert.dev
-    turnHost: "meet.giebert.dev"
-    websockets:
-      # XMPP (Prosody signalling)
-      xmpp:
-        enabled: true
-
+    turnHost: "meet.giebert.dev:5349"
     web:
       ingress:
         enabled: true
