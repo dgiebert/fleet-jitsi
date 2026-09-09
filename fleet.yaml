@@ -20,3 +20,13 @@ helm:
         - secretName: jitsi-web-tls
           hosts:
             - "meet.giebert.dev"
+      coturn:
+        enabled: true
+        turns:
+          enabled: true
+          certificate:
+            issuerRef:
+              name: letsencrypt
+        service:
+            ports:
+              turns: 5349
