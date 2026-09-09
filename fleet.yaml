@@ -9,10 +9,7 @@ helm:
     publicURL: https://meet.giebert.dev
     turnHost: "meet.giebert.dev:5349"
     jvb:
-      useNodeIP: true
-      useInternalStun: false
-      stunServers: "meet-jit-si-turnrelay.jitsi.net:443"
-      useHostPort: true
+      disableStun: true
     web:
       ingress:
         enabled: true
