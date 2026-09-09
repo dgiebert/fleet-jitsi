@@ -7,3 +7,16 @@ helm:
   version: 3.6.0
   values:
     publicURL: https://meet.giebert.dev
+    web:
+      ingress:
+        enabled: true
+        annotations:
+          cert-manager.io/cluster-issuer: letsencrypt
+        hosts:
+          - host: "meet.giebert.dev"
+            paths:
+              - "/"
+        tls:
+        - secretName: jitsi-web-tls
+          hosts:
+            - "meet.giebert.dev"
