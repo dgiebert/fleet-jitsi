@@ -1,0 +1,9 @@
+defaultNamespace: jitsi
+
+helm:
+  repo: https://jitsi-contrib.github.io/jitsi-helm/
+  chart: jitsi-meet
+  releaseName: jitsi-meet
+  version: 3.6.0
+  values:
+    publicURL: https://meet.giebert.dev
