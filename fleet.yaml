@@ -8,6 +8,11 @@ helm:
   values:
     publicURL: https://meet.giebert.dev
     turnHost: "meet.giebert.dev"
+    websockets:
+      # XMPP (Prosody signalling)
+      xmpp:
+        enabled: true
+
     web:
       ingress:
         enabled: true
